@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Journaling Man Method | Stop thinking about your life. Start leading it.</title>
+<meta name="description" content="A three-step writing method to make your life feel like your own again. Witness. Analyze. Act. PDF workbooks, 21 days to install, €37.">
+<meta name="theme-color" content="#222222">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+
+<!-- TODO (Thijs): set the final URL once the path is chosen -->
+<link rel="canonical" href="https://go.journalingman.com/method/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Stop thinking about your life. Start leading it.">
+<meta property="og:description" content="A three-step writing method to make your life feel like your own again. Witness. Analyze. Act.">
+<meta property="og:url" content="https://go.journalingman.com/method/">
+<meta property="og:image" content="https://go.journalingman.com/method/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preload" href="assets/fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/lato-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+
+<!-- TODO (Thijs): Meta Pixel / analytics snippet goes here -->
+
+<style>
+/* ---------- Fonts (self-hosted, no third-party requests) ---------- */
+@font-face{font-family:"Anton";src:url("assets/fonts/anton-latin-400-normal.woff2") format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Lato";src:url("assets/fonts/lato-latin-400-normal.woff2") format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Lato";src:url("assets/fonts/lato-latin-700-normal.woff2") format("woff2");font-weight:700;font-display:swap}
+@font-face{font-family:"Lato";src:url("assets/fonts/lato-latin-900-normal.woff2") format("woff2");font-weight:900;font-display:swap}
+@font-face{font-family:"Caveat";src:url("assets/fonts/caveat-latin-600-normal.woff2") format("woff2");font-weight:600;font-display:swap}
+
+/* ---------- Tokens ---------- */
+:root{
+  --charcoal:#222222;
+  --deep:#191919;
+  --ink:#101010;
+  --paper:#F9F6F2;
+  --muted:#b9b4ad;
+  --line:rgba(249,246,242,.16);
+  --red:#E01541;
+  --cyan:#5CE1E6;
+  --orange:#F7931E;
+  --text-w:680px;
+  --wide-w:1040px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--charcoal);color:var(--paper);font-family:"Lato",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:18px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+p{margin:0 0 1.1em}
+strong{font-weight:900}
+:focus-visible{outline:3px solid var(--cyan);outline-offset:3px}
+
+/* ---------- Layout ---------- */
+section{padding:72px 22px}
+.deep{background:var(--deep)}
+.wrap{max-width:var(--text-w);margin:0 auto}
+.wide{max-width:var(--wide-w);margin:0 auto}
+.rule{border:0;border-top:1px solid var(--line);margin:40px 0}
+
+/* ---------- Type ---------- */
+h1,h2,h3,.anton{font-family:"Anton","Arial Narrow",Impact,sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:.01em;line-height:1;margin:0}
+h1{font-size:clamp(3.4rem,15.5vw,7.2rem);line-height:.96}
+h2{font-size:clamp(2.3rem,9.5vw,4rem);margin-bottom:.55em}
+h3{font-size:clamp(1.6rem,6vw,2.1rem)}
+.kicker{font-weight:900;text-transform:uppercase;letter-spacing:.18em;font-size:.78rem;color:var(--red);margin:0 0 18px}
+.lead{font-size:1.24rem;line-height:1.5}
+.big{font-family:"Anton","Arial Narrow",Impact,sans-serif;text-transform:uppercase;font-size:clamp(1.7rem,6.6vw,2.6rem);line-height:1.08;margin:1.3em 0 .2em}
+.red{color:var(--red)}
+.muted{color:var(--muted)}
+.hand{font-family:"Caveat","Bradley Hand",cursive;font-weight:600;line-height:1.15}
+
+/* red brushstroke under a headline phrase */
+.stroke{position:relative;white-space:nowrap;display:inline-block}
+.stroke::after{content:"";position:absolute;left:-2%;right:-2%;bottom:-.14em;height:.22em;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 20' preserveAspectRatio='none'%3E%3Cpath d='M2 12 C40 4 70 16 110 9 S190 5 230 11 S285 8 298 12 L297 16 C255 13 232 17 190 13 S120 17 80 14 S25 18 3 16 Z' fill='%23E01541'/%3E%3C/svg%3E") no-repeat center/100% 100%}
+
+/* ---------- Buttons ---------- */
+.btn{display:inline-block;background:var(--red);color:var(--paper);font-weight:900;text-transform:uppercase;letter-spacing:.12em;font-size:1rem;text-decoration:none;text-align:center;padding:20px 30px;border:2px solid var(--red);transition:transform .12s ease,background .12s ease}
+.btn:hover{background:#c41038;border-color:#c41038;transform:translateY(-2px)}
+.btn.ghost{background:transparent;border-color:var(--paper)}
+.btn.ghost:hover{background:var(--paper);color:var(--charcoal)}
+.btn.block{display:block;width:100%}
+.micro{font-size:.86rem;color:var(--muted);margin-top:14px;letter-spacing:.02em}
+
+/* ---------- Top bar ---------- */
+.top{display:flex;align-items:center;justify-content:space-between;max-width:var(--wide-w);margin:0 auto;padding:18px 22px 0}
+.top .mark{display:flex;align-items:center;gap:12px;font-weight:900;text-transform:uppercase;letter-spacing:.2em;font-size:.72rem;text-decoration:none}
+.top img{width:34px;height:34px}
+.top .price{font-weight:900;letter-spacing:.12em;font-size:.72rem;text-transform:uppercase;color:var(--muted)}
+
+/* ---------- Hero ---------- */
+.hero{padding:34px 22px 0}
+.hero-grid{max-width:var(--wide-w);margin:0 auto;display:grid;gap:36px}
+.hook{font-size:1.14rem;font-weight:700;line-height:1.4;margin:0 0 20px;padding-left:14px;border-left:4px solid var(--red)}
+.hero h1{margin-bottom:.38em}
+.hero .lead{margin-bottom:28px}
+.hero .lead b{display:block;margin-top:6px;font-weight:900;letter-spacing:.04em}
+.hero-photo{position:relative;margin:0 -22px}
+.hero-photo img{width:100%;aspect-ratio:4/4.2;object-fit:cover;object-position:50% 22%;filter:grayscale(1) contrast(1.06)}
+.hero-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(34,34,34,.0) 55%,rgba(25,25,25,1) 100%)}
+.hero-photo figcaption{position:absolute;left:22px;bottom:22px;z-index:2;font-size:2rem;color:var(--paper);transform:rotate(-3deg)}
+
+/* ---------- Recognition ---------- */
+.notes{list-style:none;margin:28px 0 30px;padding:6px 20px;background:var(--ink);border-left:4px solid var(--red)}
+.notes li{font-family:"Caveat","Bradley Hand",cursive;font-weight:600;font-size:1.62rem;line-height:1.2;padding:13px 0;border-bottom:1px solid var(--line)}
+.notes li:last-child{border-bottom:0}
+.descriptor{font-family:"Anton","Arial Narrow",Impact,sans-serif;text-transform:uppercase;font-size:clamp(1.9rem,7.6vw,3rem);line-height:1.06;margin:44px 0 0;padding-top:34px;border-top:1px solid var(--line)}
+
+/* ---------- Tried list ---------- */
+.tried{list-style:none;margin:30px 0;padding:0;border-top:1px solid var(--line)}
+.tried li{padding:16px 0;border-bottom:1px solid var(--line)}
+.tried b{display:block;font-weight:900;text-transform:uppercase;letter-spacing:.1em;font-size:.82rem;margin-bottom:3px}
+.tried span{color:var(--muted)}
+
+/* ---------- Pull quote ---------- */
+.pull{margin:40px 0;padding:28px 24px;background:var(--ink);border-left:4px solid var(--red)}
+.pull p{font-family:"Anton","Arial Narrow",Impact,sans-serif;text-transform:uppercase;font-size:clamp(1.6rem,6.4vw,2.3rem);line-height:1.1;margin:0 0 12px}
+.pull cite{font-style:normal;font-weight:900;letter-spacing:.14em;text-transform:uppercase;font-size:.76rem;color:var(--muted)}
+.scribble{font-size:2.3rem;color:var(--cyan);transform:rotate(-2deg);display:inline-block;margin-top:14px}
+
+/* ---------- Method ---------- */
+.steps{display:grid;gap:18px;margin:36px 0 0}
+.step{background:var(--ink);padding:28px 24px 26px;border-top:4px solid var(--red);position:relative}
+.step .num{font-family:"Anton",Impact,sans-serif;font-size:1rem;letter-spacing:.14em;color:var(--red);margin-bottom:10px}
+.step h3{font-size:clamp(2.4rem,10vw,3.2rem);margin-bottom:6px}
+.step .hard{font-weight:900;text-transform:uppercase;letter-spacing:.14em;font-size:.8rem;margin:0 0 14px;color:var(--muted)}
+.step p:last-child{margin-bottom:0}
+.loop{margin:44px auto 0;max-width:420px}
+.loop svg{width:100%;height:auto;display:block}
+.loop-copy{margin-top:34px}
+
+/* ---------- Testimonials ---------- */
+.proof-label{font-weight:900;text-transform:uppercase;letter-spacing:.16em;font-size:.72rem;color:var(--muted);margin:0 0 18px}
+.quote{background:var(--ink);padding:28px 24px;margin:0;border-left:4px solid var(--paper)}
+.quote h3{font-size:clamp(1.6rem,6.2vw,2.1rem);margin-bottom:14px;line-height:1.08}
+.quote blockquote{margin:0}
+.quote blockquote p{margin-bottom:.8em}
+.quote figcaption{font-weight:900;text-transform:uppercase;letter-spacing:.14em;font-size:.8rem;margin-top:16px}
+.quote figcaption::before{content:"";display:inline-block;width:26px;height:3px;background:var(--red);vertical-align:middle;margin-right:10px}
+.quotes{display:grid;gap:18px}
+
+/* ---------- What's inside ---------- */
+.inside-head{max-width:var(--text-w);margin:0 auto 40px}
+.group{margin-top:46px}
+.group-head{display:flex;align-items:baseline;gap:14px;border-bottom:1px solid var(--line);padding-bottom:12px;margin-bottom:22px}
+.group-head .n{font-family:"Anton",Impact,sans-serif;color:var(--red);font-size:1.1rem;letter-spacing:.12em}
+.group-head h3{font-size:clamp(2rem,8vw,2.6rem)}
+.group-head .tag{margin-left:auto;font-weight:900;text-transform:uppercase;letter-spacing:.14em;font-size:.68rem;color:var(--muted);text-align:right}
+.tools{display:grid;gap:26px}
+.tool{display:grid;grid-template-columns:104px 1fr;gap:20px;align-items:start}
+.tool h4{font-family:"Anton",Impact,sans-serif;font-weight:400;text-transform:uppercase;font-size:1.55rem;line-height:1.05;margin:0 0 10px;letter-spacing:.01em}
+.tool dl{margin:0}
+.tool dt{font-weight:900;text-transform:uppercase;letter-spacing:.14em;font-size:.68rem;color:var(--red);margin-top:10px}
+.tool dt:first-child{margin-top:0}
+.tool dd{margin:2px 0 0;font-size:1rem;line-height:1.5}
+.tool dd.have{font-weight:700}
+.areas{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0 0;padding:0;list-style:none}
+.areas li{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;border:1px solid var(--line);padding:4px 8px;color:var(--muted)}
+
+/* booklet covers, drawn in CSS */
+.cover{position:relative;aspect-ratio:3/4.15;background:#0b0b0b;box-shadow:6px 8px 0 rgba(0,0,0,.45);overflow:hidden;
+  background-image:repeating-linear-gradient(115deg,rgba(255,255,255,.035) 0 1px,transparent 1px 7px),repeating-linear-gradient(25deg,rgba(255,255,255,.025) 0 1px,transparent 1px 9px)}
+.cover::before{content:"";position:absolute;left:7px;top:0;bottom:0;width:1px;background:rgba(255,255,255,.14)}
+.cover .jm{position:absolute;top:9px;right:9px;width:16px;height:16px;opacity:.9}
+.cover{display:flex;flex-direction:column;justify-content:center;gap:5px;padding-top:26%}
+.cover .band{background:var(--paper);color:#111;font-weight:900;text-transform:uppercase;letter-spacing:.12em;font-size:.56rem;line-height:1.25;text-align:center;padding:7px 4px}
+.cover .band2{background:var(--red);color:var(--paper);font-weight:900;text-transform:uppercase;letter-spacing:.2em;font-size:.5rem;text-align:center;padding:5px 2px}
+.cover.setup .band2{background:#111;border-top:1px solid #333;border-bottom:1px solid #333}
+
+.setup-card{background:var(--ink);padding:24px;border-top:4px solid var(--paper)}
+.setup-card .tool{align-items:center}
+.rules{list-style:none;margin:12px 0 0;padding:0}
+.rules li{font-family:"Caveat","Bradley Hand",cursive;font-weight:600;font-size:1.4rem;line-height:1.25;color:var(--cyan)}
+
+/* ---------- How it runs ---------- */
+.timeline{list-style:none;margin:34px 0;padding:0;border-left:3px solid var(--red)}
+.timeline li{position:relative;padding:0 0 28px 26px}
+.timeline li:last-child{padding-bottom:0}
+.timeline li::before{content:"";position:absolute;left:-9px;top:6px;width:15px;height:15px;background:var(--red)}
+.timeline .when{font-weight:900;text-transform:uppercase;letter-spacing:.16em;font-size:.74rem;color:var(--muted)}
+.timeline h3{font-size:1.9rem;margin:4px 0 6px}
+.timeline p{margin:0}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:34px 0}
+.fact{background:var(--ink);padding:20px 16px}
+.fact .n{font-family:"Anton",Impact,sans-serif;font-size:2.5rem;line-height:1;color:var(--paper)}
+.fact .l{font-size:.86rem;color:var(--muted);line-height:1.35;margin-top:8px}
+
+/* ---------- About ---------- */
+.about-photo{margin:0 0 30px}
+.about-photo img{width:100%;aspect-ratio:1/1;object-fit:cover;object-position:50% 20%;filter:grayscale(1) contrast(1.05)}
+
+/* ---------- Fit ---------- */
+.fit{display:grid;gap:18px;margin-top:30px}
+.fit > div{background:var(--ink);padding:26px 24px}
+.fit .yes{border-top:4px solid var(--red)}
+.fit .no{border-top:4px solid var(--muted)}
+.fit h3{margin-bottom:16px}
+.fit ul{list-style:none;margin:0;padding:0}
+.fit li{position:relative;padding:0 0 13px 28px}
+.fit li:last-child{padding-bottom:0}
+.fit .yes li::before{content:"";position:absolute;left:0;top:.62em;width:16px;height:3px;background:var(--red)}
+.fit .no li::before{content:"×";position:absolute;left:1px;top:-.08em;font-weight:900;color:var(--muted);font-size:1.2rem}
+
+/* ---------- Offer ---------- */
+.offer-card{background:var(--ink);border:2px solid var(--paper);padding:32px 22px;margin-top:30px}
+.offer-card h3{font-size:clamp(2rem,8.4vw,2.8rem);margin-bottom:6px}
+.gets{list-style:none;margin:22px 0;padding:0;border-top:1px solid var(--line)}
+.gets li{display:flex;justify-content:space-between;gap:14px;padding:11px 0;border-bottom:1px solid var(--line);font-weight:700}
+.gets li span{font-weight:900;text-transform:uppercase;letter-spacing:.14em;font-size:.66rem;color:var(--muted);white-space:nowrap;align-self:center}
+.price-row{display:flex;align-items:flex-end;gap:14px;margin:26px 0 6px}
+.price-row .amount{font-family:"Anton",Impact,sans-serif;font-size:5rem;line-height:.9}
+.price-row .terms{font-weight:900;text-transform:uppercase;letter-spacing:.12em;font-size:.76rem;line-height:1.5;color:var(--muted);padding-bottom:6px}
+.buy{display:grid;gap:12px;margin-top:24px}
+.addon{margin-top:26px;padding-top:22px;border-top:1px solid var(--line)}
+.addon b.label{display:block;font-weight:900;text-transform:uppercase;letter-spacing:.14em;font-size:.74rem;color:var(--red);margin-bottom:6px}
+.addon p{font-size:1rem;margin-bottom:16px}
+
+/* ---------- FAQ ---------- */
+.faq{margin-top:26px;border-top:1px solid var(--line)}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{cursor:pointer;list-style:none;padding:20px 40px 20px 0;font-weight:900;font-size:1.08rem;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:4px;top:50%;transform:translateY(-50%);font-family:"Anton",Impact,sans-serif;font-size:1.7rem;color:var(--red)}
+.faq details[open] summary::after{content:"–"}
+.faq details p{margin:0 0 20px;color:#e2ddd6}
+
+/* ---------- Close ---------- */
+.close-photo{margin:0 0 34px}
+.close-photo img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:50% 18%;filter:grayscale(1) contrast(1.05)}
+.signoff{font-size:2.5rem;margin:34px 0 4px;transform:rotate(-2deg);display:inline-block}
+
+/* ---------- Footer ---------- */
+footer{background:var(--ink);padding:40px 22px 110px;font-size:.84rem;color:var(--muted)}
+footer .wrap{display:grid;gap:14px}
+footer img{width:36px;height:36px}
+footer a{color:var(--muted)}
+
+/* ---------- Open-item placeholders (remove before launch) ---------- */
+.open-item{border:2px dashed var(--orange);color:var(--orange);padding:14px 16px;margin:22px 0 0;font-size:.9rem;line-height:1.45}
+.open-item b{display:block;text-transform:uppercase;letter-spacing:.14em;font-size:.7rem;font-weight:900;margin-bottom:4px}
+
+/* ---------- Sticky mobile CTA ---------- */
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:50;background:rgba(16,16,16,.96);border-top:1px solid var(--line);padding:10px 14px calc(10px + env(safe-area-inset-bottom));display:flex;align-items:center;gap:12px;transform:translateY(110%);transition:transform .25s ease}
+.sticky.on{transform:none}
+.sticky .t{flex:1;font-weight:900;text-transform:uppercase;letter-spacing:.1em;font-size:.68rem;line-height:1.35}
+.sticky .t span{display:block;color:var(--muted);font-weight:700;letter-spacing:.06em}
+.sticky .btn{padding:14px 18px;font-size:.82rem}
+
+/* ---------- Desktop ---------- */
+@media (min-width:860px){
+  body{font-size:19px}
+  section{padding:110px 32px}
+  .hero{padding:50px 32px 0}
+  .hero-grid{grid-template-columns:1.12fr .88fr;gap:56px;align-items:end}
+  .hero-copy{padding-bottom:90px}
+  .hero h1{font-size:clamp(4.6rem,8.4vw,7.4rem)}
+  .hero-photo{margin:0}
+  .hero-photo img{aspect-ratio:3/4}
+  .hero-photo::after{background:linear-gradient(180deg,rgba(34,34,34,0) 70%,rgba(34,34,34,.9) 100%)}
+  .steps{grid-template-columns:repeat(3,1fr)}
+  .quotes{grid-template-columns:1fr 1fr}
+  .tools{grid-template-columns:1fr 1fr;gap:34px 44px}
+  .tool{grid-template-columns:120px 1fr}
+  .cover .band{font-size:.62rem}
+  .fit{grid-template-columns:1fr 1fr}
+  .facts{grid-template-columns:repeat(4,1fr)}
+  .buy{grid-template-columns:1fr 1fr}
+  .offer-card{padding:46px 44px}
+  .about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:start;max-width:var(--wide-w);margin:0 auto}
+  .about-photo{margin:0;position:sticky;top:40px}
+  .about-photo img{aspect-ratio:3/4}
+  .sticky{display:none}
+  footer{padding-bottom:50px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn,.sticky{transition:none}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <a class="mark" href="#top" aria-label="Journaling Man">
+    <img src="assets/jm-logo.png" alt="Journaling Man logo" width="34" height="34">
+    <span>Journaling Man</span>
+  </a>
+  <span class="price">The Method · €37</span>
+</header>
+
+<main id="top">
+
+<!-- ============ 1. HERO ============ -->
+<section class="hero">
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <!-- LOCKED hook -->
+      <p class="hook">You've got the job, the family, the obligations. Where are you in the equation?</p>
+      <!-- LOCKED headline -->
+      <h1>Stop thinking about your life. Start <span class="stroke">leading it.</span></h1>
+      <!-- LOCKED value proposition -->
+      <p class="lead">A three-step writing method to make your life feel like your own again. <b>Witness. Analyze. Act.</b></p>
+      <a class="btn" href="#offer">Grab your pen · €37</a>
+      <p class="micro">PDF workbooks. 21 days to install. A notebook and a pen.</p>
+    </div>
+    <figure class="hero-photo">
+      <img src="assets/thijs-pen.webp" alt="Thijs, the maker of the Journaling Man Method, with a pen between his teeth" width="900" height="1200" fetchpriority="high">
+      <figcaption class="hand">Grab your pen.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ 2. RECOGNITION ============ -->
+<section class="deep">
+  <div class="wrap">
+    <p class="kicker">Sound familiar?</p>
+    <h2>Everything got a place. Except you.</h2>
+    <p class="lead">The job got its place. The family got theirs. The mortgage, the calendar, the people who count on you. All accounted for.</p>
+    <p>You didn't drop the ball. You carried it. That's why everyone depends on you.</p>
+    <p>But somewhere along the way your life stopped feeling like yours. And you can't point to the moment it happened. Nothing is on fire. That's what makes it so hard to explain.</p>
+    <p>Maybe you've caught yourself saying one of these:</p>
+    <ul class="notes">
+      <li>"I'm stuck in my head."</li>
+      <li>"I overthink everything."</li>
+      <li>"I see all the options but can't pick one."</li>
+      <li>"Something is off, but I can't put my finger on it."</li>
+      <li>"I'm just going through the motions."</li>
+      <li>"I don't know what I want anymore."</li>
+      <li>"I'm supposed to have this figured out by now."</li>
+    </ul>
+    <p>There is nothing wrong with you. You're running on choices you made years ago. Good ones, most of them. But there is no moment in your week where you ask if you still want them.</p>
+    <p>So you think about it. In the car. In the shower. At three in the morning.</p>
+    <!-- LOCKED descriptor -->
+    <p class="descriptor">The writing method for men who live more in their head <span class="red">than in their life.</span></p>
+  </div>
+</section>
+
+<!-- ============ 3. WHY THINKING HARDER DOESN'T WORK ============ -->
+<section>
+  <div class="wrap">
+    <p class="kicker">The loop</p>
+    <h2>You can't think your way out of your head.</h2>
+    <p class="lead">You've tried. Of course you have. You solve problems for a living.</p>
+    <p>But thinking has no finish line. It loops. The same three thoughts in a different order, and no conclusion at the end.</p>
+    <p>Here's what most men try, and where it stalls:</p>
+    <ul class="tried">
+      <li><b>Thinking it over one more time</b><span>More loops. Still no conclusion.</span></li>
+      <li><b>Books and podcasts</b><span>Smart, interesting, and about somebody else's life. Nothing changed.</span></li>
+      <li><b>A journal</b><span>A blank page and no idea what to write. It felt pointless.</span></li>
+      <li><b>Pro and con lists</b><span>You stared at the list and still couldn't pick.</span></li>
+      <li><b>Talking to your partner</b><span>"Just decide" is not a method.</span></li>
+      <li><b>Therapy or coaching</b><span>Feels like it's for people with "real" problems. Too slow, too expensive, too exposing.</span></li>
+    </ul>
+    <p>None of that is on you. You were handed more input. What you needed was a place where a thought can finish.</p>
+  </div>
+</section>
+
+<!-- ============ 4. WHY WRITING WORKS ============ -->
+<section class="deep">
+  <div class="wrap">
+    <p class="kicker">Why a pen</p>
+    <h2>On paper, a thought has a beginning and an end.</h2>
+    <p class="lead">In your head a thought can run for years. On paper it takes four lines.</p>
+    <p>Then it's there. Outside you. Where you can look at it, question it, and see where it's wrong.</p>
+    <p>That is all journaling is here: a thinking tool. Not a diary. Not emotional dumping. Nobody is going to ask how that makes you feel.</p>
+    <div class="pull">
+      <p>Some people think journaling is soft. It's the most hardcore thing a man can do. Because it demands honesty.</p>
+      <cite>Thijs, Journaling Man</cite>
+    </div>
+    <p>You can fool your boss, your friends, even your partner. Try fooling a page you wrote yourself.</p>
+    <p>Writing is the mechanism. A life that feels like your own is the outcome.</p>
+    <span class="hand scribble">Write like no one is reading.</span>
+  </div>
+</section>
+
+<!-- ============ 5. THE METHOD ============ -->
+<section>
+  <div class="wide">
+    <div class="wrap" style="margin-left:0">
+      <p class="kicker">The method</p>
+      <h2>Three steps. In this order.</h2>
+      <p class="lead">Treat it like a case about your own life. First the evidence. Then the verdict. Then you carry it out.</p>
+    </div>
+    <div class="steps">
+      <article class="step">
+        <div class="num">01</div>
+        <h3>Witness</h3>
+        <p class="hard">Get the evidence</p>
+        <p>You see what is going on, in your life and in your week. A witness reports what happened. He doesn't interpret it. No opinions yet. Facts, on paper.</p>
+      </article>
+      <article class="step">
+        <div class="num">02</div>
+        <h3>Analyze</h3>
+        <p class="hard">Reach the verdict</p>
+        <p>You turn what you saw into choices you make yourself. Not what you're supposed to want. Not what someone tells you. Your call, in your own words.</p>
+      </article>
+      <article class="step">
+        <div class="num">03</div>
+        <h3>Act</h3>
+        <p class="hard">Carry it out</p>
+        <p>You follow through. A choice is worth nothing until it's carried out. So it gets a first move and a date.</p>
+      </article>
+    </div>
+
+    <div class="loop" aria-hidden="true">
+      <svg viewBox="0 0 420 380" xmlns="http://www.w3.org/2000/svg" role="img">
+        <defs><marker id="arr" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#E01541"/></marker></defs>
+        <g fill="none" stroke="#E01541" stroke-width="4" marker-end="url(#arr)">
+          <path d="M262 92 Q322 150 312 232"/>
+          <path d="M252 318 Q210 336 166 318"/>
+          <path d="M108 232 Q98 150 158 92"/>
+        </g>
+        <g font-family="Anton, Impact, sans-serif" fill="#F9F6F2" text-anchor="middle" font-size="36" letter-spacing="1">
+          <text x="210" y="74">WITNESS</text>
+          <text x="318" y="296">ANALYZE</text>
+          <text x="96" y="296">ACT</text>
+        </g>
+        <g font-family="Lato, sans-serif" font-weight="900" fill="#b9b4ad" text-anchor="middle" font-size="11" letter-spacing="2.4">
+          <text x="210" y="32">EVIDENCE</text>
+          <text x="318" y="318">VERDICT</text>
+          <text x="96" y="318">CARRIED OUT</text>
+        </g>
+        <text x="210" y="200" font-family="Caveat, cursive" font-weight="600" font-size="30" fill="#F9F6F2" text-anchor="middle" transform="rotate(-4 210 200)">and again.</text>
+      </svg>
+    </div>
+
+    <div class="wrap loop-copy">
+      <p>Each step leans on the one before. No analysis without evidence. No action without a verdict. And once you've acted, you witness again: what moved, what didn't.</p>
+      <p><strong>It's a loop, and you learn to run it yourself.</strong> No coach. No calls. No group. After 21 days you'll be able to do this alone, for the rest of your life.</p>
+    </div>
+
+    <!-- Testimonial 1 (verbatim from the earlier Journaling Man page) -->
+    <div class="wrap" style="margin-top:56px">
+      <p class="proof-label">From a man who worked with Journaling Man before this edition</p>
+      <figure class="quote">
+        <h3>"Loved everything so far"</h3>
+        <blockquote>
+          <p>I joined Journaling Man for my personal development.</p>
+          <p>I can already feel the impact of all the lessons you taught me. You are doing a great job, keep going. Thank you!</p>
+        </blockquote>
+        <figcaption>Pranam On</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 6. WHAT'S INSIDE ============ -->
+<section class="deep" id="inside">
+  <div class="wide">
+    <div class="inside-head" style="margin-left:0">
+      <p class="kicker">What's inside</p>
+      <h2>Three steps. Two tools each.</h2>
+      <p class="lead">One program. Seven pieces. Every piece is a PDF workbook that tells you what to write, and leaves you with something on paper.</p>
+    </div>
+
+    <div class="setup-card">
+      <div class="tool">
+        <div class="cover setup"><img class="jm" src="assets/jm-logo.png" alt="" width="16" height="16"><div class="band">The Setup</div><div class="band2">Start here</div></div>
+        <div>
+          <h4>Start here: The Setup</h4>
+          <dl>
+            <dt>What you do</dt>
+            <dd>Set up your journal: the front for writing, the back for goals and progress. And sign up for the house rules.</dd>
+          </dl>
+          <ul class="rules">
+            <li>Brutal honesty.</li>
+            <li>Write like no one is reading.</li>
+            <li>Do what you write down.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="group">
+      <div class="group-head"><span class="n">01</span><h3>Witness</h3><span class="tag">Get the evidence</span></div>
+      <div class="tools">
+        <div class="tool">
+          <div class="cover"><img class="jm" src="assets/jm-logo.png" alt="" width="16" height="16"><div class="band">The Compass</div><div class="band2">Witness</div></div>
+          <div>
+            <h4>The Compass</h4>
+            <dl>
+              <dt>What you do</dt>
+              <dd>Score eight areas of your life: where you are now, where you want to be, the gap, and how much it matters.</dd>
+              <dt>What you have afterwards</dt>
+              <dd class="have">An honest map of your life, and a felt reason to start.</dd>
+            </dl>
+            <ul class="areas" aria-label="The eight life areas">
+              <li>Career or project</li><li>Finances</li><li>Personal growth</li><li>Body and health</li><li>Love and intimacy</li><li>Relations</li><li>Fun and stardust</li><li>Sharing and supporting</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tool">
+          <div class="cover"><img class="jm" src="assets/jm-logo.png" alt="" width="16" height="16"><div class="band">The Drops</div><div class="band2">Witness</div></div>
+          <div>
+            <h4>The Drops</h4>
+            <dl>
+              <dt>What you do</dt>
+              <dd>Short prompts for the 15-minute habit: gratitude, wins, what gave you energy, free writing.</dd>
+              <dt>What you have afterwards</dt>
+              <dd class="have">A habit that keeps you out of your head and builds evidence over time.</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="group">
+      <div class="group-head"><span class="n">02</span><h3>Analyze</h3><span class="tag">Reach the verdict</span></div>
+      <div class="tools">
+        <div class="tool">
+          <div class="cover"><img class="jm" src="assets/jm-logo.png" alt="" width="16" height="16"><div class="band">The North Star</div><div class="band2">Analyze</div></div>
+          <div>
+            <h4>The North Star</h4>
+            <dl>
+              <dt>What you do</dt>
+              <dd>Write your own definition of success, and pick the two or three fields to work on this year.</dd>
+              <dt>What you have afterwards</dt>
+              <dd class="have">Direction, in your own words.</dd>
+            </dl>
+          </div>
+        </div>
+        <div class="tool">
+          <div class="cover"><img class="jm" src="assets/jm-logo.png" alt="" width="16" height="16"><div class="band">Dilemma Breakers</div><div class="band2">Analyze</div></div>
+          <div>
+            <h4>Dilemma Breakers</h4>
+            <dl>
+              <dt>What you do</dt>
+              <dd>Follow a step-by-step protocol for a hard choice: name the question, separate fact from assumption, check it against your North Star, change perspective, name the fear, choose.</dd>
+              <dt>What you have afterwards</dt>
+              <dd class="have">A choice made. On paper.</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="group">
+      <div class="group-head"><span class="n">03</span><h3>Act</h3><span class="tag">Carry it out</span></div>
+      <div class="tools">
+        <div class="tool">
+          <div class="cover"><img class="jm" src="assets/jm-logo.png" alt="" width="16" height="16"><div class="band">Dream to Done</div><div class="band2">Act</div></div>
+          <div>
+            <h4>Dream to Done</h4>
+            <dl>
+              <dt>What you do</dt>
+              <dd>Turn the choice into a year direction, quarter goals and a first move with a date.</dd>
+              <dt>What you have afterwards</dt>
+              <dd class="have">A plan, and a first action done.</dd>
+            </dl>
+          </div>
+        </div>
+        <div class="tool">
+          <div class="cover"><img class="jm" src="assets/jm-logo.png" alt="" width="16" height="16"><div class="band">The 90-Day Review</div><div class="band2">Act</div></div>
+          <div>
+            <h4>The 90-Day Review</h4>
+            <dl>
+              <dt>What you do</dt>
+              <dd>Look back after a quarter: what moved, what didn't, what's next.</dd>
+              <dt>What you have afterwards</dt>
+              <dd class="have">The loop restarted. The system keeps running.</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top:50px"><a class="btn" href="#offer">Get the Method · €37</a></div>
+  </div>
+</section>
+
+<!-- ============ 7. HOW IT RUNS ============ -->
+<section>
+  <div class="wrap">
+    <p class="kicker">How it runs</p>
+    <h2>21 days to install it. One year to run it.</h2>
+    <p class="lead">One week per step. Then a rhythm you keep.</p>
+    <ol class="timeline">
+      <li><span class="when">Week 1</span><h3>Witness</h3><p>Set up your journal, map your life with The Compass, start The Drops.</p></li>
+      <li><span class="when">Week 2</span><h3>Analyze</h3><p>Write your North Star. Take one hard choice through a Dilemma Breaker.</p></li>
+      <li><span class="when">Week 3</span><h3>Act</h3><p>Turn it into a year direction, quarter goals, and a first move with a date.</p></li>
+      <li><span class="when">Day 90</span><h3>Review</h3><p>One sitting. What moved, what didn't, what's next. Then the next quarter starts.</p></li>
+    </ol>
+    <div class="facts">
+      <div class="fact"><div class="n">15 min</div><div class="l">on the days you write</div></div>
+      <div class="fact"><div class="n">4</div><div class="l">longer sittings in the three weeks, roughly an hour each</div></div>
+      <div class="fact"><div class="n">1</div><div class="l">review sitting after 90 days</div></div>
+      <div class="fact"><div class="n">4×</div><div class="l">a year. Repeat every quarter and the year is round</div></div>
+    </div>
+    <p>You don't write every day. At least three times a week does the job.</p>
+    <p class="big">"I don't have time."</p>
+    <p>Fifteen minutes. That's shorter than the loop in your head on an average commute. The difference is that this one ends, and leaves something on paper.</p>
+    <p>It's not about having time. It's about taking the lead back.</p>
+  </div>
+</section>
+
+<!-- ============ 8. WHO MADE THIS ============ -->
+<section class="deep">
+  <div class="about-grid">
+    <figure class="about-photo wrap">
+      <img src="assets/thijs-portrait.webp" alt="Black and white portrait of Thijs" width="900" height="1200" loading="lazy">
+    </figure>
+    <div class="wrap">
+      <p class="kicker">Who made this</p>
+      <h2>I'm Thijs. I picked up a pen.</h2>
+      <p class="lead">I'm a Dutchman living in the Portuguese countryside, and I've kept a journal for 20 years. Sometimes consistently. More often not.</p>
+      <p>It took me most of those years to notice the pattern. In the periods I wrote, I was sharper and more confident. I made bigger choices. I got things done.</p>
+      <p>Then came one week in 2025. My wife and I signed the mortgage on a new house. I lost my job. And we got the news that our daughter needed intensive medical treatment.</p>
+      <p>Same week.</p>
+      <p>I picked up a pen. Not as therapy. To stay clear, and to choose deliberately while everything moved at once.</p>
+      <p>On paper I chose freedom and independence for my family. That's how we ended up here, and it's what I built Journaling Man from.</p>
+      <p><strong>I'm not selling a miracle.</strong> You can lead a horse to water. This method works when you do it, and only then. I can give you the steps and the tools. The pen is yours.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 9. FOR YOU / NOT FOR YOU ============ -->
+<section>
+  <div class="wide">
+    <div class="wrap" style="margin-left:0">
+      <p class="kicker">Straight talk</p>
+      <h2>Who this is for. And who it isn't.</h2>
+    </div>
+    <div class="fit">
+      <div class="yes">
+        <h3>This is for you if</h3>
+        <ul>
+          <li>You feel the "where am I in this?" question and want to work it out privately.</li>
+          <li>You function well, people rely on you, and something is still off.</li>
+          <li>You're done collecting input and want a tool you use yourself.</li>
+          <li>You can find fifteen minutes, three times a week.</li>
+        </ul>
+      </div>
+      <div class="no">
+        <h3>Not for you if</h3>
+        <ul>
+          <li>You're looking for therapy. This isn't it, and it is not a substitute for professional help.</li>
+          <li>You want a quick fix.</li>
+          <li>You want something to read without doing. It's a workbook. The work is the point.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 10. THE OFFER ============ -->
+<section class="deep" id="offer">
+  <div class="wide">
+    <!-- Testimonials 2 and 3 (verbatim from the earlier Journaling Man page) -->
+    <p class="proof-label">From men who worked with Journaling Man before this edition</p>
+    <div class="quotes">
+      <figure class="quote">
+        <h3>"This is a set of great tools"</h3>
+        <blockquote>
+          <p>Go and do this, it's a cool, up-and-coming, community, it's another way to structure and engage with your dreams and plans and problem solving.</p>
+          <p>But now you're not winging it, alone.</p>
+          <p>And everybody knows journaling works; the journaling man just gathered all the proven exercises, put them together, and motivates you to actually do them.</p>
+        </blockquote>
+        <figcaption>Orly Vlot</figcaption>
+      </figure>
+      <figure class="quote">
+        <h3>"Highly recommend this"</h3>
+        <blockquote>
+          <p>I have been waiting a long time to practice journaling.</p>
+          <p>Now I use writing as a tool to remember times of my life and my thinking. This helps me to develop myself.</p>
+          <p>This is a good method, with a small community to find help in practicing journaling. A great idea, Thijs !</p>
+        </blockquote>
+        <figcaption>David</figcaption>
+      </figure>
+    </div>
+
+    <div class="wrap">
+      <div class="offer-card">
+        <p class="kicker">The offer</p>
+        <h3>The Journaling Man Method</h3>
+        <p class="muted" style="margin:0">A three-step writing method for men whose life no longer feels like their own.</p>
+        <ul class="gets">
+          <li>The Setup <span>Start here</span></li>
+          <li>The Compass <span>Witness</span></li>
+          <li>The Drops <span>Witness</span></li>
+          <li>The North Star <span>Analyze</span></li>
+          <li>Dilemma Breakers <span>Analyze</span></li>
+          <li>Dream to Done <span>Act</span></li>
+          <li>The 90-Day Review <span>Act</span></li>
+        </ul>
+        <p style="font-size:1rem">Seven printable PDF workbooks. You use them again every quarter. All you add is a notebook and a pen.</p>
+        <div class="price-row">
+          <div class="amount">€37</div>
+          <div class="terms">One-time.<br>No subscription.</div>
+        </div>
+
+        <!-- TODO (Thijs): replace both href values with your Stripe Payment Links -->
+        <div class="buy">
+          <a class="btn block" href="#REPLACE-WITH-STRIPE-LINK-METHOD-37" data-buy="method">The Method · €37</a>
+          <a class="btn ghost block" href="#REPLACE-WITH-STRIPE-LINK-METHOD-PLUS-NOTION-44" data-buy="bundle">The Method + Notion board · €44</a>
+        </div>
+        <p class="micro">Private work. No calls, no coaching, no group to join.</p>
+
+        <div class="addon">
+          <b class="label">Optional, €7 extra</b>
+          <p><strong>My Notion board for the Act step.</strong> The board I use myself to keep my year direction, quarter goals and next moves in one place. You don't need it. A notebook does the job. It's there if you like your plan on a screen.</p>
+        </div>
+
+        <div class="open-item"><b>Open: Stripe links</b>Both buttons above still point to placeholders. Paste the two Stripe Payment Links into the href values.</div>
+        <div class="open-item"><b>Open: guarantee</b>Not decided yet. If you offer one, the terms go in this spot. If you don't, delete this box.</div>
+        <div class="open-item"><b>Open: Notion board</b>Built as a second button for now. If Stripe allows a checkout bump, remove the second button and keep the add-on text.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 11. QUESTIONS ============ -->
+<section>
+  <div class="wrap">
+    <p class="kicker">Questions</p>
+    <h2>Fair questions. Short answers.</h2>
+    <div class="faq">
+      <details><summary>Is this therapy?</summary><p>No. It's a method for thinking and choosing on paper. It is not a substitute for professional help.</p></details>
+      <details><summary>I've never journaled.</summary><p>That's who it's built for. Every sitting tells you what to write.</p></details>
+      <details><summary>I tried journaling and quit.</summary><p>Most journals give you a blank page or a rigid form. This gives you a method, with a purpose for each sitting. You always know why you're writing and what you'll have when you're done.</p></details>
+      <details><summary>How much time does it take?</summary><p>About 15 minutes on the days you write. In the first three weeks there are four longer sittings of roughly an hour each. After 90 days you do one review sitting, and you repeat that every quarter.</p></details>
+      <details><summary>Do I have to write every day?</summary><p>No. At least three times a week does the job.</p></details>
+      <details><summary>Is it only a PDF?</summary><p>Yes. Workbooks you print or copy into your notebook, and reuse every quarter. No app, no login, no videos to sit through.</p></details>
+      <details><summary>Do I need the Notion board?</summary><p>No. It's optional. The method runs on a notebook and a pen.</p></details>
+      <details><summary>Is there a group or calls?</summary><p>No. This is private work. You, a notebook, and what's true.</p></details>
+      <details><summary>Will I read it and do nothing, like the books?</summary><p>Fair. A book asks you to read. This asks you to write, and each sitting ends with something on paper: a map, a direction, a choice, a first move with a date. But I won't pretend otherwise: it only works if you pick up the pen.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 12. CLOSE ============ -->
+<section class="deep">
+  <div class="wrap">
+    <figure class="close-photo">
+      <img src="assets/thijs-up.webp" alt="Thijs looking up with a pen in his mouth" width="900" height="1199" loading="lazy">
+    </figure>
+    <h2>So. Where are you in the equation?</h2>
+    <p class="lead">The job has its place. The family has theirs. This is where you take yours back. Fifteen minutes, a notebook, a pen.</p>
+    <p>I built this because life is too short to live it badly. I want you to look back, later, on a life you chose. And be satisfied with it.</p>
+    <p class="big">From writing to reality.</p>
+    <p style="margin-top:28px"><a class="btn" href="#offer">Grab your pen · €37</a></p>
+    <p class="hand signoff">Keep writing. Stay sharp. Be happy.</p>
+    <p class="muted" style="font-weight:900;letter-spacing:.14em;text-transform:uppercase;font-size:.8rem">Thijs</p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <img src="assets/jm-logo.png" alt="" width="36" height="36">
+    <p style="margin:0">The Journaling Man Method is a writing method. It is not therapy, coaching or medical advice, and it is not a substitute for professional help.</p>
+    <!-- TODO (Thijs): add real links -->
+    <p style="margin:0"><a href="#REPLACE-PRIVACY">Privacy</a> · <a href="#REPLACE-TERMS">Terms</a> · <a href="#REPLACE-CONTACT">Contact</a></p>
+    <p style="margin:0">© <span id="yr">2026</span> Journaling Man</p>
+  </div>
+</footer>
+
+<div class="sticky" id="sticky" aria-hidden="true">
+  <div class="t">The Journaling Man Method<span>PDF workbooks · €37 one-time</span></div>
+  <a class="btn" href="#offer" tabindex="-1">Grab your pen</a>
+</div>
+
+<script>
+(function(){
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  var bar = document.getElementById('sticky'), offer = document.getElementById('offer');
+  if(!bar || !offer || !('IntersectionObserver' in window)) return;
+  var pastHero = false, atOffer = false;
+  function set(){ var on = pastHero && !atOffer; bar.classList.toggle('on', on); bar.setAttribute('aria-hidden', String(!on)); bar.querySelector('a').tabIndex = on ? 0 : -1; }
+  new IntersectionObserver(function(e){ pastHero = !e[0].isIntersecting; set(); }).observe(document.querySelector('.hero .btn'));
+  new IntersectionObserver(function(e){ atOffer = e[0].isIntersecting; set(); }, {rootMargin:'0px 0px -30% 0px'}).observe(offer);
+})();
+</script>
+</body>
+</html>
